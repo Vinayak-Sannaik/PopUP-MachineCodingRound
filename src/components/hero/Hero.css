@@ -1,9 +1,10 @@
 .hero {
   background-image: url("Frame.png");
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 520px;
   top: -8px;
-  left: -26px;
+  left: 0;
   gap: 0px;
   opacity: 0px;
   display: flex;
@@ -25,6 +26,7 @@
   width: 211px;
   height: 52px;
   margin-top: 50px;
+  /* margin-left: 120px; */
   left: 120px;
   gap: 4px;
 
@@ -38,10 +40,37 @@
 
 /* --------- media Queries ------------- */
 @media(max-width:1000px){
+  .hero {
+    height: 400px; 
+  }
   .hero-text{
     margin-top: 140px;
-  margin-left: 100px;
+  margin-left: 80px;
   font-size: 34px;
   font-weight: 500;
 }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 300px; 
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .hero-text {
+    margin-top: 100px;
+    margin-left: 40px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .quick-view-btn {
+    width: 160px;
+    height: 40px;
+    margin-top: 20px; 
+    margin-left: 10px;
+    font-size: 14px;
+  }
 }
