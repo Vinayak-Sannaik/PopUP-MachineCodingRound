@@ -1,0 +1,36 @@
+nav {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1440px;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+  background: rgba(28, 28, 28, 0.2);
+  border-bottom: 1px solid rgba(255, 119, 119, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.logo {
+  position: absolute;
+  width: 116px;
+  height: 47.23px;
+  left: 120px;
+  top: 12px;
+  background-image: url('Frame.svg');
+}
+
+/* --------- media Queries ------------- */
+@media(max-width:1000px){
+  nav{
+    width: 1000px;
+  height: 52px;
+}
+.logo{
+  width: 116px;
+  height: 47.23px;
+  left: 100px;
+  top: 5px;
+}
+
+}
+
